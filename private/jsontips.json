@@ -1,0 +1,44 @@
+[
+  {
+    "_id":"1",
+    "content":"Let's have sex in silence",
+    "url":"lets-have-sex-in-silence",
+    "author":"Darren",
+    "category":"talk"
+  },
+  {
+    "_id":"2",
+    "content":"Have you had a sexual health check up before, and if so when?",
+    "url":"have-you-had-a-sexual-health-check-up-before,-and-if-so-when",
+    "author":"Phil",
+    "category":"talk"
+  },
+  {
+    "_id":"3",
+    "content":"What contraception do you use?",
+    "url":"what-contraception-do-you-use",
+    "author":"Mark",
+    "category":"talk"
+  },
+  {
+    "_id":"4",
+    "content":"What contraception have you used in the past and has it worked for you?",
+    "url":"what-contraception-have-you-used-in-the-past-and-has-it-worked-for-you",
+    "author":"Paul",
+    "category":"talk"
+  },
+  {
+    "_id":"5",
+    "content":"Let's reminisce about the hottest sex we've ever had",
+    "url":"lets-reminisce-about-the-hottest-sex-weve-ever-had",
+    "author":"Michael",
+    "category":"talk"
+  },
+  {
+    "_id":"6",
+    "content":"Fire up your memory by indulging in a description of what your senses experienced",
+    "url":"fire-up-your-memory-by-indulging-in-a-description-of-what-your-senses-experienced",
+    "author":"Sarah",
+    "category":"talk"
+  }
+]

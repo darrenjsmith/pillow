@@ -1,0 +1,91 @@
+html, body {
+    min-height: 100%;
+}
+
+body {
+    color: #444;
+  	background-image: url('start-bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: top center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; 
+}
+
+.navbar { 
+    margin-bottom: 100px;
+    margin-top: 30px;
+}
+
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+    font-family: "Pacifico", "Helvetica Neue", Helvetica, Arial, cursive;
+    font-size: 3em;
+    color: white;
+}
+
+.container {
+
+}
+  
+#spinner { height: 300px }
+.tip {
+    *zoom: 1;
+    -webkit-transition: all 300ms 0ms;
+    -webkit-transition-delay: ease-in;
+    -moz-transition: all 300ms 0ms ease-in;
+    -o-transition: all 300ms 0ms ease-in;
+    transition: all 300ms 0ms ease-in;
+    position: relative;
+    opacity: 1;
+    margin-bottom: 50px;
+}
+.tip:before, .tip:after {
+    content: "";
+    display: table;
+}
+.tip:after { clear: both }
+.tip.invisible { opacity: 0 }
+
+.tip .tip-content { float: center }
+.tip .tip-content h1 {
+    margin: 0;
+    line-height: 1.4;
+    text-align: center;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 40px;
+}
+
+.tip-nav {
+    text-align: center;
+}
+
+.dropdown-menu span {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    line-height: 20px;
+    color: #bbb;
+    white-space: nowrap;
+}
+
+.load-more:hover {
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.1);
+}
+.tips .spinner-container{
+  position: relative;
+  height: 100px;
+}
+
+/*customised accounts-ui-unstyled for login form 
+.login-link-text {display: hide;}
+.accounts-dialog {display: show !important;}
+.login-close-text {display: none;}*/
