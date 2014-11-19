@@ -8,16 +8,16 @@ Template.tipItem.helpers({
     {return true;}
     else
     {return false;}
-  },*/
+  },
   // Outdated helper to link to url of tip. Should delete.
   domain: function() {
     var a = document.createElement('a');
     a.href = this.url;
     return a.hostname;
-  }
+  }*/
 });
 
-
+console.log('test');
 
 // previously used ownPost function
 /*
