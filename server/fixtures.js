@@ -35,11 +35,13 @@ Meteor.startup(function () {
 
       var data = JSON.parse(Assets.getText("jsontips.json"));
     
-      console.log("found file")
+      console.log("Found file")
 
       data.forEach(function (item, index, array) {
           Tips.insert(item);
       })
+      
+      console.log("Done")
   }
 })
   

@@ -1,4 +1,4 @@
-Template.tipPage.helpers({
+Template.home.helpers({
   
   randomUrl: function() {
 

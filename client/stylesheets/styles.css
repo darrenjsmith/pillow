@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-    color: #444;
+    color: white;
   	background-image: url('start-bg.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -14,8 +14,9 @@ body {
     -o-background-size: cover; 
 }
 
+
 .navbar { 
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     margin-top: 30px;
 }
 
@@ -28,13 +29,30 @@ body {
     font-family: "Pacifico", "Helvetica Neue", Helvetica, Arial, cursive;
     font-size: 3em;
     color: white;
+    text-decoration: none;
+}    
+
+a:hover.navbar-brand {
+    color: white;
+    text-decoration: none;
 }
 
-.container {
+h1.relief {
+    text-shadow: 2px 2px 0 #393939;
+}
 
+p.lead {
+    text-shadow: 1px 1px 0 #393939;
+    font-size: 22px;
+}
+
+.addthis_native_toolbox {
+    display: inline-block;
+    margin-bottom: 50px;
 }
   
 #spinner { height: 300px }
+
 .tip {
     *zoom: 1;
     -webkit-transition: all 300ms 0ms;
@@ -44,12 +62,13 @@ body {
     transition: all 300ms 0ms ease-in;
     position: relative;
     opacity: 1;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .tip:before, .tip:after {
     content: "";
     display: table;
 }
+
 .tip:after { clear: both }
 .tip.invisible { opacity: 0 }
 
@@ -61,10 +80,25 @@ body {
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
     font-size: 40px;
+    padding-bottom: 20px;
+
 }
 
-.tip-nav {
+.tip .tip-meta {
+  padding-bottom: 40px;
+}
+
+.tip .tip-social {
+  padding-bottom: 20px;
+}
+
+.tip .tip-meta a {
+    color: white;
+    }
+
+.tip .tip-nav {
     text-align: center;
+  
 }
 
 .dropdown-menu span {
@@ -84,6 +118,18 @@ body {
   position: relative;
   height: 100px;
 }
+
+
+@media(min-width:768px) {
+  .navbar-brand {
+  }
+  
+  .navbar { 
+    margin-bottom: 100px;
+  }
+}
+
+
 
 /*customised accounts-ui-unstyled for login form 
 .login-link-text {display: hide;}
