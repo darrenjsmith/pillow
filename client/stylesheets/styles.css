@@ -93,8 +93,18 @@ p.lead {
 }
 
 .tip .tip-meta a {
-    color: white;
-    }
+  color: white;
+}
+
+.tip .tip-url-wrap {
+  text-align: center;
+}
+
+.tip .tip-url {
+  font-size: 10px;
+  display: inline-block;
+  padding: 4px;
+}
 
 .tip .tip-nav {
     text-align: center;

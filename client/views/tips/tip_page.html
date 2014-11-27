@@ -6,13 +6,26 @@
           <h1>"{{content}}"</h1>
         </div>
 
-        <!--<p>"{{urlFor tipPage}}"</p>-->
+        <!--<p>"{{urlFor 'tipPage'}}"</p>-->
         <!--<div class="sharing text-center">
           <div class="addthis_native_toolbox"></div>
         </div>-->
 
         <div class="tip-social text-center">
-          [fb send] [fb like] [tweet]
+          <div id="share">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://url-to-tweet.com" data-text="text-to-tweet" data-via="somebody">Tweet</a>
+
+            <fb:send href="http://www.test.com" colorscheme="light"></fb:send>
+
+         </div>
+         {{updateShareButtons}}
+       </div>
+        
+        
+        <div class="tip-url-wrap">
+          <div class="tip-url">
+            <p>http://pillow.io/p/{{uid}}</p>
+          </div>
         </div>
 
         <div class="tip-meta text-center">
