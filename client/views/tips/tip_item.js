@@ -17,8 +17,6 @@ Template.tipItem.helpers({
   }*/
 });
 
-console.log('test');
-
 // previously used ownPost function
 /*
 ownPost: function() {
