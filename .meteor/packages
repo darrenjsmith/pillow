@@ -7,9 +7,12 @@ meteor-platform
 iron:router
 sacha:spin
 accounts-password
-accounts-ui-unstyled
-alanning:roles
 random
 mizzao:bootstrap-3
 chrismbeckett:fontawesome4
 reywood:iron-router-ga
+alanning:roles
+accounts-ui-unstyled
+dfischer:prerenderio
+meteorhacks:fast-render
+

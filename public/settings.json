@@ -1,7 +1,11 @@
+// this file is not used. but for reference/backup to modulus config
 {
     "public": {
         "ga": {
             "id": "UA-52898904-1"
-        },
+        }
+    },
+    "PrerenderIO": {
+        "token": "GoYUBqoVlBvvk4tukr55"
     }
 }

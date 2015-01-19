@@ -1,72 +1,104 @@
 html, body {
-    min-height: 100%;
+  min-height: 100%;
 }
 
 body {
-    color: white;
-  	background-image: url('start-bg.jpg');
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: top center;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover; 
+  color: white;
+  background-image: url('start-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: top center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; 
 }
 
 
-.navbar { 
-    margin-bottom: 50px;
-    margin-top: 30px;
+.navbar {
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
-.navbar-brand {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    text-align: center;
-    margin: auto;
-    font-family: "Pacifico", "Helvetica Neue", Helvetica, Arial, cursive;
-    font-size: 3em;
-    color: white;
-    text-decoration: none;
-}    
-
-a:hover.navbar-brand {
-    color: white;
-    text-decoration: none;
+.nav-brand {
+  text-align: center;
 }
 
-h1.relief {
-    text-shadow: 2px 2px 0 #393939;
+.brand-slogan {
+  text-align: center;
+  font-size: 11px;
 }
 
-p.lead {
-    text-shadow: 1px 1px 0 #393939;
-    font-size: 22px;
+.nav-items {
+  font-family: 'PT Sans', sans-serif;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.nav-items a {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline-block;
+  margin-top: 10px;
+  color: #e8e8e8;
+  text-transform: uppercase;
+}
+
+.brand {
+  font-family: "Pacifico", "Helvetica Neue", Helvetica, Arial, cursive;
+  font-size: 3em;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover.brand {
+  color: white;
+  text-decoration: none;
+}
+
+.home h1.relief {
+  text-shadow: 2px 2px 0 #393939;
+  padding-bottom: 10px;
+}
+
+.home p.lead {
+  text-shadow: 1px 1px 0 #393939;
+  font-size: 22px;
+  margin-bottom: 0px;
+}
+
+.home .btn {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+
+.home small {
+  text-align: center;
+  color: #e0e0e0;
 }
 
 .addthis_native_toolbox {
-    display: inline-block;
-    margin-bottom: 50px;
+  display: inline-block;
+  margin-bottom: 50px;
 }
-  
-#spinner { height: 300px }
+
+#spinner { height: 200px }
 
 .tip {
-    *zoom: 1;
-    -webkit-transition: all 300ms 0ms;
-    -webkit-transition-delay: ease-in;
-    -moz-transition: all 300ms 0ms ease-in;
-    -o-transition: all 300ms 0ms ease-in;
-    transition: all 300ms 0ms ease-in;
-    position: relative;
-    opacity: 1;
-    margin-bottom: 20px;
+  *zoom: 1;
+  -webkit-transition: all 300ms 0ms;
+  -webkit-transition-delay: ease-in;
+  -moz-transition: all 300ms 0ms ease-in;
+  -o-transition: all 300ms 0ms ease-in;
+  transition: all 300ms 0ms ease-in;
+  position: relative;
+  opacity: 1;
+  margin-bottom: 20px;
 }
 .tip:before, .tip:after {
-    content: "";
-    display: table;
+  content: "";
+  display: table;
 }
 
 .tip:after { clear: both }
@@ -74,22 +106,34 @@ p.lead {
 
 .tip .tip-content { float: center }
 .tip .tip-content h1 {
-    margin: 0;
-    line-height: 1.4;
-    text-align: center;
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: italic;
-    font-size: 40px;
-    padding-bottom: 20px;
+  margin: 0;
+  line-height: 1.4;
+  text-align: center;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 40px;
+  padding-bottom: 10px;
+  text-shadow: 2px 1px 0px #2c2e38;
 
 }
 
 .tip .tip-meta {
   padding-bottom: 40px;
+  font-size: 11px;
 }
 
 .tip .tip-social {
-  padding-bottom: 20px;
+  padding-bottom: 5px;
+  padding-top: 30px;
+}
+
+.tip .tip-social span {
+  display: block;
+  margin-right: 10px;
+}
+
+.tip .tip-social iframe {
+  margin-left: 30px;
 }
 
 .tip .tip-meta a {
@@ -107,22 +151,22 @@ p.lead {
 }
 
 .tip .tip-nav {
-    text-align: center;
-  
+  text-align: center;
+  padding-top: 10px;
 }
 
 .dropdown-menu span {
-    display: block;
-    padding: 3px 20px;
-    clear: both;
-    line-height: 20px;
-    color: #bbb;
-    white-space: nowrap;
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  line-height: 20px;
+  color: #bbb;
+  white-space: nowrap;
 }
 
 .load-more:hover {
-    text-decoration: none;
-    background: rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.1);
 }
 .tips .spinner-container{
   position: relative;
@@ -132,10 +176,15 @@ p.lead {
 
 @media(min-width:768px) {
   .navbar-brand {
-  }
+}
+
+  .home h1.relief {
+  font-size: 50px;
+}
+  
   
   .navbar { 
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
 }
 

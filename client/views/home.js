@@ -18,6 +18,12 @@ Template.home.helpers({
     randomUrl = tipCollection[Math.floor(Math.random() * tipCollection.length)];
 
     return "/p/" + randomUrl;
+  },
+  
+  totalTips: function () {
+    console.log("hello world");
+    var noOfTips = Tips.find().count();
+    return noOfTips;
   }
   
 });
