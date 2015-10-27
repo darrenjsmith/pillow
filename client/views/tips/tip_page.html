@@ -1,0 +1,51 @@
+<template name="tipPage">
+  <div id="fb-root"></div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="tip">
+        <div class="tip-content">
+          <h1>"{{content}}"</h1>
+        </div>
+        
+        {{#if afcomment}}
+          <div class="tip-meta text-center">
+            <a href="{{afurl}}" target="_blank">{{afcomment}} <span class="glyphicon glyphicon-share-alt"></span></a>
+          </div>
+          {{else}}
+          <p></p>
+        {{/if}}
+
+
+        <!--<p>"{{urlFor 'tipPage'}}"</p>-->
+        <!--<div class="sharing text-center">
+          <div class="addthis_native_toolbox"></div>
+        </div>-->
+
+        <div class="tip-social text-center">
+          <div id="share">
+            <span class="twitter">
+              <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://url-to-tweet.com" data-text="text-to-tweet" data-via="somebody">Tweet</a>
+            </span>
+            <span class="facebook-send">
+              <fb:send href="http://www.test.com" colorscheme="light"></fb:send>
+            </span>
+            <span class="facebook-like">
+              <div class="fb-like" data-href="{{urlFor 'tipPage'}}" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+            </span>
+          </div>
+           {{updateShareButtons}}
+        </div>
+
+        <div class="tip-url-wrap">
+          <div class="tip-url">
+            <p>http://pillow.io/p/{{uid}}</p>
+          </div>
+        </div>
+              
+        <div class="tip-nav">
+          <a type="button" class="btn btn-danger btn-lg" href="{{randomUrl}}">Throw me another!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

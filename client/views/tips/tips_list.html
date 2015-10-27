@@ -1,0 +1,10 @@
+<template name="tipsList">
+  <div class="tips">
+    {{#each tips}}
+      {{> tipItem}}
+    {{/each}}
+  </div>
+  <!--{{#if isInRole 'admin'}}
+  <p>You're an admin</p>
+  {{/if}}-->
+</template>

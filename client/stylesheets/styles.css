@@ -1,0 +1,196 @@
+html, body {
+  min-height: 100%;
+}
+
+body {
+  color: white;
+  background-image: url('start-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: top center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; 
+}
+
+
+.navbar {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.nav-brand {
+  text-align: center;
+}
+
+.brand-slogan {
+  text-align: center;
+  font-size: 11px;
+}
+
+.nav-items {
+  font-family: 'PT Sans', sans-serif;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.nav-items a {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline-block;
+  margin-top: 10px;
+  color: #e8e8e8;
+  text-transform: uppercase;
+}
+
+.brand {
+  font-family: "Pacifico", "Helvetica Neue", Helvetica, Arial, cursive;
+  font-size: 3em;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover.brand {
+  color: white;
+  text-decoration: none;
+}
+
+.home h1.relief {
+  text-shadow: 2px 2px 0 #393939;
+  padding-bottom: 10px;
+}
+
+.home p.lead {
+  text-shadow: 1px 1px 0 #393939;
+  font-size: 22px;
+  margin-bottom: 0px;
+}
+
+.home .btn {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+
+.home small {
+  text-align: center;
+  color: #e0e0e0;
+}
+
+.addthis_native_toolbox {
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+#spinner { height: 200px }
+
+.tip {
+  *zoom: 1;
+  -webkit-transition: all 300ms 0ms;
+  -webkit-transition-delay: ease-in;
+  -moz-transition: all 300ms 0ms ease-in;
+  -o-transition: all 300ms 0ms ease-in;
+  transition: all 300ms 0ms ease-in;
+  position: relative;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+.tip:before, .tip:after {
+  content: "";
+  display: table;
+}
+
+.tip:after { clear: both }
+.tip.invisible { opacity: 0 }
+
+.tip .tip-content { float: center }
+.tip .tip-content h1 {
+  margin: 0;
+  line-height: 1.4;
+  text-align: center;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 40px;
+  padding-bottom: 10px;
+  text-shadow: 2px 1px 0px #2c2e38;
+
+}
+
+.tip .tip-meta {
+  padding-bottom: 40px;
+  font-size: 11px;
+}
+
+.tip .tip-social {
+  padding-bottom: 5px;
+  padding-top: 30px;
+}
+
+.tip .tip-social span {
+  display: block;
+  margin-right: 10px;
+}
+
+.tip .tip-social iframe {
+  margin-left: 30px;
+}
+
+.tip .tip-meta a {
+  color: white;
+}
+
+.tip .tip-url-wrap {
+  text-align: center;
+}
+
+.tip .tip-url {
+  font-size: 10px;
+  display: inline-block;
+  padding: 4px;
+}
+
+.tip .tip-nav {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.dropdown-menu span {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  line-height: 20px;
+  color: #bbb;
+  white-space: nowrap;
+}
+
+.load-more:hover {
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.1);
+}
+.tips .spinner-container{
+  position: relative;
+  height: 100px;
+}
+
+
+@media(min-width:768px) {
+  .navbar-brand {
+}
+
+  .home h1.relief {
+  font-size: 50px;
+}
+  
+  
+  .navbar { 
+    margin-bottom: 80px;
+  }
+}
+
+
+
+/*customised accounts-ui-unstyled for login form 
+.login-link-text {display: hide;}
+.accounts-dialog {display: show !important;}
+.login-close-text {display: none;}*/
