@@ -3463,6 +3463,6 @@ img.zoom-img {
 }
 .buttonTextSubmit {
 	border-radius: 0px 4px 4px 0px!important;
-	padding:15px 22px 15px 21px;
-	top:-2px;
+	padding:15px 22px 14px 22px;
+	top:-6px;
 }
