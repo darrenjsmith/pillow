@@ -47,7 +47,32 @@
         <script src="js/plugins.js" type="text/javascript" name="plugins"></script>
         <script src="js/slides.js" type="text/javascript" name="main-scripts"></script>
         <script src="//load.sumome.com/" data-sumo-site-id="1b0a62ec7de98faed472462b38ef08b00b2193abdf9ec609cffa5cfdcbf3a37b" async="async"></script>
-      
+      <script type="text/javascript">
+            (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setIdentity track validateCode".split(" "), 0);
+branch.init('key_live_mjf7fKsj07JPmpKquFyQkklkwvb5qbH9');
+            function sendSMS(form) {
+                var phone = form.phone.value;
+                var linkData = {
+                    tags: [],
+                    channel: 'Website',
+                    feature: 'TextMeTheApp',
+                    data: {
+                        'foo': 'bar'
+                    }
+                };
+                var options = {};
+                var callback = function(err, result) {
+                    if (err) {
+                        alert("Sorry, something went wrong.");
+                    }
+                    else {
+                        alert("SMS sent!");
+                    }
+                };
+                branch.sendSMS(phone, linkData, options, callback);
+                form.phone.value = "";
+            }
+        </script>
 
     </head>
     <body class="slides   fast animated">
@@ -119,7 +144,13 @@
   <div class="sections desktop">
     <div class="left"><span class="button actionButton sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span></div>
     <div class="center space"><a href="#"><svg style="width:160px;height:60px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg></a></div>
-    <div class="right"><a class="button small pillowPurple" target="_blank" href="https://bnc.lt/m/DqMih8i5nr">Txt me App Link</a></div>
+    <div class="right">
+	    <form onsubmit="sendSMS(this); return false;">
+        	<input id="phone" class="inputTextNumber" name="phone" type="tel" placeholder="(650) 123-4567" />
+        	<input class="button small pillowPurple buttonTextSubmit" type="submit" value="Txt me App Link"/>
+        </form>
+<!--     <a class="button small pillowPurple" target="_blank" href="https://bnc.lt/m/DqMih8i5nr">Txt me App Link</a></div> -->
+    </div>
     <!--<div class="right"><a class="button empty" href="https://itunes.apple.com/us/app/pillow-intimate-sensual-adventures/id1060044689"><svg style="width:168px;height:50px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#appstoreButton"></use></svg></a></div>-->
   </div>
   
@@ -314,7 +345,8 @@
           <div class="form-12">
             <p class="raleway small ae-3 opaque">Get the <strong>'Ultimate Toolkit for your Intimate Relationship'</strong>' <br>and learn more about Pillow Play</p>
 
-            <form action="https://www.getrevue.co/profile/pillow/add_subscriber" method="post" id="revue-form" name="revue-form" target="_blank" autocomplete="off">
+<!--             <form action="https://www.getrevue.co/profile/pillow/add_subscriber" method="post" id="revue-form" name="revue-form" target="_blank" autocomplete="off"> -->
+			<form action="https://hooks.zapier.com/hooks/catch/1037524/4ey2or/" method="post" id="revue-form" name="revue-form" target="_blank" autocomplete="off">
               <input type="email" class="revue-form-field ae-4 fromCenter" placeholder="Email" name="member[email]" id="member_email" />
               <input type="text" class="revue-form-field ae-5 fromCenter" placeholder="Firstname" name="member[first_name]" id="member_first_name" />
               <input type="submit" class="button pillowPurple uppercase ae-6 fromCenter" placeholder="Name" name="member[subscribe]" value="Send it to me" id="member_submit"/>
