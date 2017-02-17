@@ -68,6 +68,56 @@
         <!-- DO NOT MODIFY -->
         <!-- End Facebook Pixel Code --> 
       
+        <!-- Dynamic Content Based on URL Query -->
+        <script type="text/javascript">
+            // Parse the URL parameter
+            function getParameterByName(name, url) {
+                if (!url) url = window.location.href;
+                name = name.replace(/[\[\]]/g, "\\$&");
+                var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                    results = regex.exec(url);
+                if (!results) return null;
+                if (!results[2]) return '';
+                return decodeURIComponent(results[2].replace(/\+/g, " "));
+            }
+            // Give the parameter a variable name
+            var dynamicContent = getParameterByName('dc');
+
+             $(document).ready(function() {
+
+              // Check if the URL parameter is save
+              if (dynamicContent == 'save') {
+                $('#save').show();
+              } 
+              // Check if the URL parameter is oranges
+              else if (dynamicContent == 'fix') {
+                $('#fix').show();
+              } 
+              // Check if the URL parameter is bananas
+              else if (dynamicContent == 'rekindle') {
+                $('#rekindle').show();
+              } 
+              // Check if the URL parameter is bananas
+              else if (dynamicContent == 'reconnect') {
+                $('#reconnect').show();
+              } 
+              else if (dynamicContent == 'repair') {
+                $('#repair').show();
+              } 
+              else if (dynamicContent == 'intimacy') {
+                $('#intimacy').show();
+              } 
+              else if (dynamicContent == 'sl') {
+                $('#sl').show();
+              } 
+              // Check if
+              // Check if the URL parmeter is empty or not defined, display default content
+              else {
+                $('#default-content').show();
+              }
+            });
+        </script>
+      
     </head>
     <body class="slides scroll smooth fast simplifiedMobile defaultScroll whiteSlide noPreload">
       
@@ -194,10 +244,33 @@
     <div class="container">
       <div class="wrap">
         <div class="fix-10-12">
-          <h1 class="ae-1 small">Fix your Sexless Marriage in <br />30 days</h1>
+          <!-- Default Dynamic Section -->
+          <div id="default-content" class="dynamic-content">
+            <h1 class="ae-1 small">Heal your Sexless Marriage in <br />30 days</h1>
+          </div>
+          <div id="save" class="dynamic-content">
+            <h1 class="ae-1 small">Save your Marriage in <br />30 days</h1>
+          </div>       
+          <div id="fix" class="dynamic-content">
+            <h1 class="ae-1 small">Fix your Marriage in <br />30 days</h1>
+          </div>
+          <div id="rekindle" class="dynamic-content">
+            <h1 class="ae-1 small">Rekindle your Marriage in <br />30 days</h1>
+          </div>   
+          <div id="reconnect" class="dynamic-content">
+            <h1 class="ae-1 small">Reconnect with your Spouse in <br />30 days</h1>
+          </div>  
+          <div id="repair" class="dynamic-content">
+            <h1 class="ae-1 small">Repair your Marriage in <br />30 days</h1>
+          </div>
+          <div id="intimacy" class="dynamic-content">
+            <h1 class="ae-1 small">Build Intimacy in your Relationship for <br />30 days</h1>
+          </div>
+          <div id="sl" class="dynamic-content">
+            <h1 class="ae-1 small">Fix your Sexless Marriage in <br />30 days</h1>
+          </div>
           <!--<h1 class="ae-1">30 Incredible Intimacy Exercises to Grow your Relationship.</h1>     -->     
           <div class="ae-2">
-            <!--<p class="hero">Long-lasting relationships take a little work, and that’s OK.</p>-->
             <p class="hero">Rekindle and Renew your Intimate Relationship</p>
             <!--<p>Get your 7-step Worksheet to Fixing your Marriage and try Pillow Play's Intimacy Exercises for Couples</p>-->
             <p>Get 3 Pillow Play Intimacy Exercises for free!</p>
@@ -224,7 +297,7 @@
         <div class="fix-10-12">
           <h1 class="small ae-1 fromLeft">These 30 proven Intimacy Exercises will reconnect you both.</h1>
           <div class="ae-2 fromLeft">
-            <p>All you need to do is press play, and follow-along together.</p>
+            <p>Just <strong>press play</strong> and follow-along together.</p>
             <!--<p>It's quick, simple and will help you both feel intimately close again.</p>-->
           </div>
         </div>
@@ -265,7 +338,7 @@
       
         <div class="fix-10-12 toCenter">
           <h1 class="small ae-1">Who's it for?</h1>
-          <div class="ae-2"><p>Couples who are looking to reconnect</p></div>
+          <div class="ae-2"><p>Couples who are looking to <strong>Reconnect</strong></p></div>
         </div>
         <div class="fix-12-12">  
           <ul class="grid later equal">
@@ -354,8 +427,8 @@
             <li class="col-4-12 equalElement">
 							<div class="fix-4-12 ae-5">
 							  <svg width="72" height="72" viewBox="0 0 35 36" xmlns="http://www.w3.org/2000/svg" class="icon-47"><g stroke-width="1" stroke-linejoin="round" fill="none"><path class="path1" d="M27 4l-15 15-7-7-5 5 12 12 20-20z"></path></g></svg> 
-                <h3 class="uppercase">INSPIRATION</h3>
-                <p class="small">Encourages creativity with new ideas for the bedroom.</p>
+                <h3 class="uppercase">CREATIVITY</h3>
+                <p class="small">Inspires you both with new ideas for the bedroom.</p>
               </div>
             </li>
             <li class="col-4-12 equalElement">
@@ -498,7 +571,7 @@
 							<div class="fix-6-12">
                 <!--<svg width="72" height="72" viewBox="0 0 72 72" class="ae-4 fromCenter icon-48" xmlns="http://www.w3.org/2000/svg"><g stroke-width="3" stroke-linejoin="round" fill="none"><path d="M1 28.313c23.023 0 41.688 18.664 41.688 41.688"/><path d="M1 2.438c37.312 0 67.563 30.251 67.563 67.563"/><path d="M16.813 61.375c0 3.97-3.217 7.188-7.188 7.188-3.97 0-7.188-3.217-7.188-7.188 0-3.97 3.217-7.188 7.188-7.188 3.97 0 7.188 3.217 7.188 7.188z"/></g></svg>-->
                 <h3 class="equalElement ae-8">1</h3>
-                <div class="ae-9"><p class="small">Give your partner 10-20 minutes of loving-focused time and attention each day for the next 30 days.</p></div>
+                <div class="ae-9"><p class="small">Give your partner 15 minutes of loving-focused time and attention for 30 days.</p></div>
               </div>
             </li>
             <li class="col-6-12">
